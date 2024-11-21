@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+$font: 'Noto serif';
+$primary-color: #F57020;
+$secondary-color: #d1782b;
+
+.image-container {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.div-method {
+  text-align: justify;
+  border: 1px ridge $primary-color ;
+  border-radius: 10px;
+  
+
+  pre {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+  }
+}
+
+.comment-card {
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-border {
+  border-color: $secondary-color; /* Escolha a cor que desejar */
+  border-width: 1px;    /* Espessura da borda */
+  border-style: solid;  /* Tipo da borda: solid, dashed, dotted etc. */
+}
+
+.div-input-comment {
+  textarea {
+    border-radius: 10px;
+  }
+  button {
+    align-self: end;
+  }
+}

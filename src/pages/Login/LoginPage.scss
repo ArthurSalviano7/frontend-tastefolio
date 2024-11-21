@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+$login-font: 'Dancing Script';
+$primary-color: #F57020;
+$secondary-color: #EDE534;
+
+
+.login-img {
+    top: 0;
+    left: 0;
+    width: 100%;          /* A imagem preencherá 100% da largura do contêiner */
+    max-width: 100%;
+    height: 100vh;        /* Mantém a proporção da imagem */
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-container {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1); 
+    position: absolute; 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 2; 
+}
+
+.img-title {
+    font-family: $login-font, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color: $primary-color;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para dispositivos menores que 768px de largura (tablets e celulares) */
+  .login-title {
+    font-size: 3rem; /* Aumenta o tamanho da fonte apenas em dispositivos menores */
+  }
+}
+
+.login-form {
+    font-family: 'Noto Serif', serif;
+    min-height: 100vh; // O formulário ocupa toda a altura da tela
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; // Centraliza verticalmente o conteúdo
+}
+
